@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-1.10.2.min.js"></script>
+    <title>Login Page in HTML with CSS Code Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style12.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="box-form">
+    <div class="left">
+        <div class="overlay">
+            <h1>Hello World.</h1>
+            <p>Job Seek and Employee</p>
+            <span>
+                <p>login with social media</p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+            </span>
+        </div>
+    </div>
+    <div class="right">
+        <h5>Login</h5>
+        <form action="login.php" method="post">
+            <div class="inputs">
+                <input id="username" type="text" name="username" placeholder="user name" required>
+                <br>
+                <input id="pass" type="password" name="password" placeholder="password" required>
+            </div>
+            <br><br>
+            <div class="remember-me--forget-password">
+                <label>
+                    <input type="checkbox" name="remember" checked>
+                    <span class="text-checkbox">Remember me</span>
+                </label>
+                <p>forgot password?</p>
+            </div>
+            <br>
+            <button id="btn1" type="submit">Login</button>
+			
+        </form>
+		<li class="section_1_top_list_item" onclick="onsignup()"><a> Signup/register </a> 
+			<script>
+				function onsignup(){
+				  window.location.href = "./signup.html"
+				}
+				</script></li>
+    </div>
+</div>
+</body>
+</html>

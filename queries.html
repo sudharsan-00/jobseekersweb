@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Successful</title>
+    <link rel="stylesheet" href="queries.css">
+    <script src="https://kit.fontawesome.com/74c0b2949d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "sudharsan.cd22@bitsathy.ac.in",
+            Password: "17012005@Vsj",
+            To: "sudharsan.cd22@bitsathy.ac.in",
+            From:document.getElementById("email").value,
+            Subject: "Sending Email using javascript",
+            Body: "Well that was easy!!",
+          })
+
+          
+            .then(function (message) {
+              alert("mail sent successfully")
+            });
+        }
+      </script>
+</head>
+<body>
+    <section class="first">
+    <div class="container">
+        <h1>Your Application was Successful!</h1>
+        <p>Congratulations! Your application has been successfully submitted.</p>
+    </div>
+    <div class="move">
+    <p>Contact Now</p>
+    <i class="fa-solid fa-computer-mouse"></i>
+    </div>
+</section>
+    <section class="contact" id="contact">
+        <div class="us">
+            <div class="sample">
+                <h2>Get In touch</h2>
+            </div>
+            <div class="box">
+                <div class="contact-form">
+                    <h3>Send A Message</h3>
+                    <form action="mailto:sudharsan.cd22@bitsathy.ac.in" method="post"  enctype="text/plain">
+                        <div class="formbox">
+                            <div class="row50">
+                                <div class="inputbox">
+                                    <span>Username</span>
+                                    <input type="text" placeholder="Your Username In the website" id="name" name="name">
+                                </div>
+                                <div class="inputbox">
+                                    <span>Mobile</span>
+                                    <input type="text" placeholder="+91 9500546628" id="phone" name="phone">
+                                </div>
+        
+                                <div class="inputbox">
+                                    <span>Message</span>
+                                    <textarea placeholder="Write Your Message" id="message" name="message"></textarea>
+                                </div>
+                                <div class="submit">
+                                    <button>Send</button>
+                                </div>
+
+                            </div>
+                                <div class="second">
+                                    <div class="inputbox">
+                                        <span>Last Name</span>
+                                        <input type="text" placeholder="Ex. Peter" id="sname" name="sname">
+                                    </div>
+                                    <div class="inputbox">
+                                        <span>Your Email</span>
+                                        <input type="email" placeholder="Ex. JohnPeter@gmail.com" id="email" name="email">
+                                    </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <div class="infobox">
+                        <span><ion-icon name="location-outline"></ion-icon></span>
+                        <p>BIT,SATHY,TAMIL NADU</p>
+                    </div>
+                    <div class="infobox">
+                        <span><ion-icon name="mail-open-outline"></ion-icon></span>
+                        <a href="mailto:sudharsanstrikes002@gmail.com">sudharsanstrikes002@gmail.com</a>
+                    </div>
+                    <div class="infobox">
+                        <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                        <a href="https://www.linkedin.com/in/sudharsan-vs">Linkedin</a>
+                    </div>
+                    <div class="infobox">
+                        <span><ion-icon name="logo-github"></ion-icon></span>
+                        <a href="https://github.com/sudharsan-00">Github</a>
+                    </div>  
+                    <div class="infobox">
+                        <span><ion-icon name="call-outline"></ion-icon></span>
+                        <a href="tel:+919789532557">+919789532557</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7398735537813!2d77.2726179749437!3d11.498679288697446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba921f77ec45de1%3A0x80bb28a281f91227!2sBannari%20Amman%20Institute%20of%20Technology%20-%20College%20Staff%20Quarters!5e0!3m2!1sen!2sin!4v1687793448372!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
